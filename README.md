@@ -244,3 +244,5 @@ gcc -o solutions/json_main solutions/json_main.c solutions/json_list.o -ljansson
 ---
 
 **Remember:** Stop after **90 minutes** and record where you stopped.
+
+Used Time: 89 Minutes
