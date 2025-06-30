@@ -198,12 +198,12 @@ In this exercise you will:
 
    void usage(const char *prog) {
        fprintf(stderr, "Usage: %s -i <file.json>", prog);
-exit(EXIT\_FAILURE);
-}
+   exit(EXIT\_FAILURE);
+   }
 
-int main(int argc, char \*argv\[]) {
-int opt;
-char \*filename = NULL;
+   int main(int argc, char \*argv\[]) {
+   int opt;
+   char \*filename = NULL;
 
    while ((opt = getopt(argc, argv, "i:")) != -1) {
        if (opt == 'i') {
@@ -221,9 +221,8 @@ char \*filename = NULL;
    free_list(head);
    return 0;
 
-}
-
-```
+   }
+   ```
 4. Compile and run:
 ```bash
 gcc -c solutions/json_list.c -o solutions/json_list.o -ljansson
