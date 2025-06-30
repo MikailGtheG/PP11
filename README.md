@@ -197,10 +197,7 @@ In this exercise you will:
    #include <unistd.h>
 
    void usage(const char *prog) {
-       fprintf(stderr, "Usage: %s -i <file.json>
-   ```
-
-", prog);
+       fprintf(stderr, "Usage: %s -i <file.json>", prog);
 exit(EXIT\_FAILURE);
 }
 
@@ -208,7 +205,6 @@ int main(int argc, char \*argv\[]) {
 int opt;
 char \*filename = NULL;
 
-```
    while ((opt = getopt(argc, argv, "i:")) != -1) {
        if (opt == 'i') {
            filename = optarg;
@@ -224,11 +220,10 @@ char \*filename = NULL;
    print_list(head);
    free_list(head);
    return 0;
-```
 
 }
 
-````
+```
 4. Compile and run:
 ```bash
 gcc -c solutions/json_list.c -o solutions/json_list.o -ljansson
